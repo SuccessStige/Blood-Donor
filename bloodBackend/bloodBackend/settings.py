@@ -99,15 +99,23 @@ WSGI_APPLICATION = 'bloodBackend.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'blood_donor_db',
-        'USER': 'blood_user_donor',
-        'PASSWORD': '1234567890',
-        'HOST': 'localhost',
-        'PORT': '5434',
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'blood_donor_db',
+#         'USER': 'blood_user_donor',
+#         'PASSWORD': '1234567890',
+#         'HOST': 'localhost',
+#         'PORT': '5434',
+#     }
+# }
 
 
 

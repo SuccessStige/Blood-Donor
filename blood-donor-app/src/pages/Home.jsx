@@ -28,7 +28,7 @@ export default function Home() {
     total_requests: 0,
     lives_saved: 0,
   });
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchStats = async () => {
